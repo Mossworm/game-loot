@@ -1,30 +1,9 @@
+/* 여기서는 프로젝트 전역에 오버라이드할 정적 스타일 적용을 합니다. 폰트 등 기본값 설정에 유용할 듯. */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* 위에는 테일윈드 헤더인듯. 다른 초기페이지 스타일 지우면서 위까지 실수로 지웠더니 테일윈드로 적용한 스타일 싹 날아가서 복구함. */
 
 ::-webkit-scrollbar {
   width: 10px;
