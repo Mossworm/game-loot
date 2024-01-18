@@ -1,112 +1,49 @@
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="main">
+      <div className="w-full h-screen relative overflow-hidden">
+        <div className="w-full h-full left-0 top-0 absolute bg-neutral-200" />
+
+        {/* 타이틀 */}
+        <div className="w-[525px] h-[204px] left-[692px] top-[124px] absolute">
+          <div className="left-[38px] top-[150px] absolute text-center text-black text-4xl font-medium font-['IBM Plex Sans KR']">나는 어떤 유형의 게이머일까요?</div>
+          <div className="left-0 top-0 absolute"><span className="text-black text-9xl font-normal font-['Outfit']">G</span><span className="text-black text-8xl font-normal font-['Outfit']">ame-</span><span className="text-black text-9xl font-normal font-['Outfit']">BTI</span></div>
         </div>
+
+        {/* 아이콘 영역 */}
+        <div className="w-[674px] h-32 left-[623px] top-[421px] absolute">
+          <div className="w-[674px] h-32 left-0 top-0 absolute">
+            <img className="w-32 h-32 left-0 top-0 absolute" src="https://via.placeholder.com/128x128" />
+            <img className="w-32 h-32 left-[182px] top-0 absolute" src="https://via.placeholder.com/128x128" />
+            <img className="w-32 h-32 left-[364px] top-0 absolute" src="https://via.placeholder.com/128x128" />
+            <img className="w-32 h-32 left-[546px] top-0 absolute" src="https://via.placeholder.com/128x128" />
+          </div>
+          <div className="w-[674px] h-32 left-0 top-0 absolute bg-gradient-to-r from-red-700 via-fuchsia-800 to-blue-700" />
+        </div>
+        
+        {/* 결과 미리보기 */}
+        <div className="left-[871px] top-[571px] absolute text-center text-blue-600 text-[32px] font-light font-['IBM Plex Sans KR'] underline">결과 미리보기</div>
+        
+        {/* 라벨들 */}
+        <div className="h-[169px] left-[464px] top-[642px] absolute">
+          <div className="left-[213px] top-[115px] absolute text-center text-black text-4xl font-medium font-['IBM Plex Sans KR']">로그인 없이 바로 시작하실 수 있습니다!</div>
+          <div className="w-[992px] left-0 top-0 absolute text-center"><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR']">게임의</span><span className="text-blue-600 text-2xl font-medium font-['IBM Plex Sans KR']"> 플레이 성향</span><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR']">과 좋아하는 게임 </span><span className="text-blue-600 text-2xl font-medium font-['IBM Plex Sans KR']">장르</span><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR']">를 진단하여 자신의 </span><span className="text-blue-600 text-2xl font-medium font-['IBM Plex Sans KR']">게이밍 유형</span><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR']">을 알아볼 수 있습니다.<br />그리고 </span><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR'] underline">그에 맞는 적절한 게임을 추천</span><span className="text-black text-2xl font-medium font-['IBM Plex Sans KR']">해 드립니다.</span></div>
+        </div>
+        
+        {/* 시작 버튼 */}
+        <Link href="/survey" className="w-[342px] h-24 left-[789px] top-[863px] absolute">
+          <div className="w-[342px] h-24 left-0 top-0 absolute bg-blue-600 rounded-[20px] shadow" />
+          <div className="left-[126px] top-[10px] absolute text-white text-5xl font-normal font-['IBM Plex Sans KR'] leading-[76.80px]">시작</div>
+        </Link>
+
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* 푸터 */}
+      <div className="footer bg-slate-600 h-52 text-center">
+        <p className="m-auto text-white">
+          © 2024.<br />3443 & mossworm<br />All Rights Reserved.
+        </p>
       </div>
     </main>
   )
