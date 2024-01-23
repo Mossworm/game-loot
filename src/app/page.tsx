@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="main">
+    <main className="main font-Pret">
       <div className="w-full h-screen relative overflow-hidden justify-center">
         <div className="w-full h-full absolute bg-neutral-200" />
         <div className="w-full h-full absolute flex flex-col justify-around py-52">
@@ -47,7 +47,7 @@ export default function Home() {
               <span className="text-black text-2xl font-medium">해 드립니다.</span>
             </div>
           </div>
-          
+
           {/* 큰 라벨 */}
           <div className="text-center text-black text-4xl font-bold">로그인 없이 바로 시작하실 수 있습니다!</div>
 
