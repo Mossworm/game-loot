@@ -8,11 +8,11 @@ export default function Home() {
   const darkButtonFunc = () => {
     setDark(!isDark);
     if (isDark) {
-      document.documentElement.classList.remove("light");
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     }
   }
 
@@ -24,11 +24,9 @@ export default function Home() {
           {/* 타이틀 */}
           <div className="flex flex-col">
             <div className="mx-auto">
-              <span className="text-9xl font-normal">G</span>
-              <span className="text-8xl font-normal">ame-</span>
-              <span className="text-9xl font-normal">BTI</span>
+              <span className="text-9xl font-semibold">Game Loot</span>
             </div>
-            <div className="text-center text-4xl font-bold">나는 어떤 유형의 게이머일까요?</div>
+            <div className="text-center text-4xl font-bold">나의 선호 게임 유형 분석과 추천</div>
           </div>
 
           {/* 아이콘 영역 */}
@@ -51,9 +49,9 @@ export default function Home() {
               <span className="text-blue-600 text-2xl font-bold"> 플레이 성향</span>
               <span className="text-2xl font-medium">과 좋아하는 게임 </span>
               <span className="text-blue-600 text-2xl font-bold">장르</span>
-              <span className="text-2xl font-medium">를 진단하여 자신의 </span>
-              <span className="text-blue-600 text-2xl font-bold">게이밍 유형</span>
-              <span className="text-2xl font-medium">을 알아볼 수 있습니다.<br />그리고 </span>
+              <span className="text-2xl font-medium">를 진단하여 나만의 게임 </span>
+              <span className="text-blue-600 text-2xl font-bold">통계</span>
+              <span className="text-2xl font-medium">를 제공해 드립니다.<br />그리고 </span>
               <span className="text-2xl font-medium underline">그에 맞는 적절한 게임을 추천</span>
               <span className="text-2xl font-medium">해 드립니다.</span>
             </div>
@@ -69,8 +67,7 @@ export default function Home() {
 
         </div>
         <div className="absolute size-fit right-0 top-0 flex flex-row gap-4 m-4">
-          <button className="block size-16 bg-yellow-800" onClick={darkButtonFunc}>눈뽕</button>
-          <button className="block size-16 bg-yellow-800" onClick={()=>{}}>대충 버튼</button>
+          <button className="block size-16" onClick={darkButtonFunc}><img src={isDark ? '/images/moon.svg' : '/images/sun.svg'}/></button>
         </div>
       </div>
       {/* 푸터 */}
