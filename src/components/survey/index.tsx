@@ -16,9 +16,9 @@ export default function SurveyView() {
       <div className='w-96 h-6 bg-green-300'>{qState.currentQuestion+1}번 문제</div>
       <h2 className='w-96 my-4 text-center font-bold'>"{questions[qState.currentQuestion].question}"</h2>
       <div className='flex flex-col gap-4'>
-      {questions[qState.currentQuestion].answers.map((answer)=>(
-        <button className='w-96 border border-gray-200' onClick={() => qDispatch({type:'next'})}>{answer.answer}</button>
-      ))}
+      {qState.currentQuestion < questions.length - 1 ? 
+      questions[qState.currentQuestion].answers.map((answer)=>(<button className='w-96 border border-gray-200' onClick={() => qDispatch({type:'next'})}>{answer.answer}</button>)) : 
+      questions[qState.currentQuestion].answers.map((answer)=>(<button className='w-96 border border-gray-200' onClick={() => {window.location.href='/'}}>{answer.answer}</button>))}
       </div>
     </div>
   )
