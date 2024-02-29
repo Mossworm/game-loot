@@ -3,17 +3,17 @@ import Image from 'next/image'
 
 export default function Result() {
     return (
-        <div className="flex flex-col items-center justify-center gap-y-5">
+        <div className="flex flex-col items-center justify-center gap-y-10 px-16 py-7">
 
-            <div className='h-[180px]'></div>
+            <div className='h-[20px]'></div>
 
             <div className='text-xl font-bold'>당신에게 추천하는 게임은...</div>
             <div>
                 <Image
                     src={'/images/result/icon_1.svg'}
                     alt={'Image'}
-                    width={300}
-                    height={169}
+                    width={688}
+                    height={414}
                     className="rounded-2xl"
                 />
                 <div className="text-2xl font-bold">HELLDIVERS™ 2</div>
@@ -23,19 +23,19 @@ export default function Result() {
                 </div>
             </div>
 
-            <div className='flex flex-row gap-x-4'>
+            <div className='grid grid-cols-2 gap-4'>
                 <Image
                     src={'/images/result/icon_2.svg'}
                     alt={'Image'}
-                    width={140}
-                    height={79}
+                    width={336}
+                    height={191}
                     className="rounded-2xl"
                 />
                 <Image
                     src={'/images/result/icon_3.svg'}
                     alt={'Image'}
-                    width={140}
-                    height={79}
+                    width={336}
+                    height={191}
                     className="rounded-2xl"
                 />
             </div>
@@ -44,8 +44,8 @@ export default function Result() {
 
             <div className="font-bold">상세한 결과 그래프</div>
 
-            <div className='flex flex-row gap-x-10'>
-                <img src="https://via.placeholder.com/140x140" />
+            <div className='grid grid-cols-2 gap-10'>
+                <img src="https://via.placeholder.com/240x240" />
                 <div className='flex flex-col justify-center gap-y-2'>
                     <div className='flex flex-row gap-x-1 items-center'>
                         <div className="w-2 h-2 bg-red-600 rounded-full" />
