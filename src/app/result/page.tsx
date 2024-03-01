@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 export default function Result() {
     return (
-        <div className="flex flex-col items-center justify-center gap-y-10 px-16 py-7">
+        <div className="flex flex-col items-center justify-center gap-y-10 p-8">
 
-            <div className='h-[20px]'></div>
+            <div className='h-[10px]'></div>
 
             <div className='text-xl font-bold'>당신에게 추천하는 게임은...</div>
             <div>
@@ -14,9 +14,9 @@ export default function Result() {
                     alt={'Image'}
                     width={688}
                     height={414}
-                    className="rounded-2xl"
+                    className="rounded-xl"
                 />
-                <div className="text-2xl font-bold">HELLDIVERS™ 2</div>
+                <div className="text-xl font-bold">HELLDIVERS™ 2</div>
                 <div className='flex flex-row gap-x-1.5'>
                     <div className="text-zinc-800 text-xs font-medium">#액션</div>
                     <div className="text-zinc-800 text-xs font-medium">#3인칭 슈팅</div>
@@ -29,14 +29,14 @@ export default function Result() {
                     alt={'Image'}
                     width={336}
                     height={191}
-                    className="rounded-2xl"
+                    className="rounded-xl"
                 />
                 <Image
                     src={'/images/result/icon_3.svg'}
                     alt={'Image'}
                     width={336}
                     height={191}
-                    className="rounded-2xl"
+                    className="rounded-xl"
                 />
             </div>
 
@@ -60,7 +60,7 @@ export default function Result() {
 
             <img className="" src="/images/result/divider.svg" />
 
-            <button className="w-72 h-24 bg-gradient-to-b from-gray-300 to-gray-300 rounded-2xl place-content-center">
+            <button className="w-72 h-24 bg-gradient-to-b from-gray-300 to-gray-300 rounded-xl place-content-center">
                 결과가 마음에 드시나요?
             </button>
 
