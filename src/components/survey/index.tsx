@@ -25,8 +25,8 @@ export default function SurveyView() {
         <img className='rounded-xl' src="https://cdn.akamai.steamstatic.com/steam/apps/1337520/header.jpg?t=1706732251" />
 
         {qState.currentQuestion < questions.length - 1 ?
-          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='h-10 border border-gray-300 rounded-xl' onClick={() => qDispatch({ type: 'next' })}>{answer.answer}</button>)) :
-          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='h-10 border border-gray-300 rounded-xl' onClick={() => { window.location.href = '/' }}>{answer.answer}</button>))}
+          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='p-2 border border-gray-300 rounded-xl' onClick={() => qDispatch({ type: 'next' })}>{answer.answer}</button>)) :
+          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='p-2 border border-gray-300 rounded-xl' onClick={() => { window.location.href = '/' }}>{answer.answer}</button>))}
 
       </div>
     </div>
