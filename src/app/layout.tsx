@@ -18,14 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-light-bg dark:bg-dark-bg`}>
 
-        <div className='w-full h-full bg-light-bg dark:bg-dark-bg'>
-          <div className='flex justify-end p-2'>
-            <DarkModeBtn />
-          </div>
-          {children}
+        <div className='flex justify-end p-2'>
+          <DarkModeBtn />
         </div>
+        {children}
 
       </body>
     </html>
