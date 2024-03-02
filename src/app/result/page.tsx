@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Result() {
     return (
-        <div className="flex flex-col items-center justify-center gap-y-10 p-8">
+        <div className="flex flex-col items-center justify-center gap-y-10 p-8 dark:text-dark-text">
 
             <div className='h-[10px]'></div>
 
@@ -18,8 +18,8 @@ export default function Result() {
                 />
                 <div className="text-xl font-bold">HELLDIVERS™ 2</div>
                 <div className='flex flex-row gap-x-1.5'>
-                    <div className="text-zinc-800 text-xs font-medium">#액션</div>
-                    <div className="text-zinc-800 text-xs font-medium">#3인칭 슈팅</div>
+                    <div className="text-xs font-medium">#액션</div>
+                    <div className="text-xs font-medium">#3인칭 슈팅</div>
                 </div>
             </div>
 

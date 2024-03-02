@@ -1,33 +1,24 @@
 "use client";
 
 import Link from 'next/link'
-import {useState} from 'react'
 
 export default function Home() {
-  const [isDark, setDark] = useState(false);
-  const darkButtonFunc = () => {
-    setDark(!isDark);
-    if (isDark) {
-      document.documentElement.classList.add("light");
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("light");
-    }
-  }
-
   return (
     <main className="main font-Pret text-black dark:text-neutral-200">
       <div className="w-full h-screen relative overflow-hidden">
-        <div className="w-full h-full absolute bg-neutral-200 dark:bg-neutral-900" />
-        <div className="w-full h-full max-h-[1200px] absolute flex flex-col gap-4 justify-around py-52">
+        {/* <div className="w-full h-full absolute bg-neutral-200 dark:bg-neutral-900" /> */}
+        <div className="w-full h-full max-h-[1200px] absolute flex flex-col gap-7 justify-around py-52">
           {/* 타이틀 */}
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-3">
             <div className="mx-auto">
               <span className="text-9xl font-semibold">Game Loot</span>
             </div>
             <div className="text-center text-4xl font-bold">나의 선호 게임 유형 분석과 추천</div>
           </div>
+
+          {
+            //#region 아이콘과 설명들
+          }
 
           {/* 아이콘 영역 */}
           <div className="mx-auto w-[674px] min-h-32">
@@ -40,7 +31,7 @@ export default function Home() {
           </div>
 
           {/* 결과 모달 창 미리보기 */}
-          <div className="mx-auto text-center text-blue-600 hover:text-blue-500 text-3xl font-light underline">결과 미리보기</div>
+          {/* <div className="mx-auto text-center text-blue-600 hover:text-blue-500 text-3xl font-light underline">결과 미리보기</div> */}
 
           {/* 작은 라벨 */}
           <div className="mx-auto w-3/4">
@@ -58,16 +49,17 @@ export default function Home() {
           </div>
 
           {/* 큰 라벨 */}
-          <div className="text-center text-4xl font-bold">로그인 없이 바로 시작하실 수 있습니다!</div>
+          {/* <div className="text-center text-4xl font-bold">로그인 없이 바로 시작하실 수 있습니다!</div> */}
+
+          {
+            //#endregion
+          }
 
           {/* 시작 버튼 */}
           <Link href="/survey" className="mx-auto w-[342px] h-24">
             <div className="hover:translate-y-1 flex items-center justify-center w-[342px] h-24 bg-blue-600 hover:bg-blue-500 rounded-[20px] shadow-xl text-white text-5xl">시작</div>
           </Link>
 
-        </div>
-        <div className="absolute size-fit right-0 top-0 flex flex-row gap-4 m-4">
-          <button className="block size-16" onClick={darkButtonFunc}><img src={isDark ? '/images/moon.svg' : '/images/sun.svg'}/></button>
         </div>
       </div>
       {/* 푸터 */}
