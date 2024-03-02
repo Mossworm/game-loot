@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import RetryBtn from '@/components/result/retryBtn'
 
 export default function Result() {
     return (
@@ -60,9 +61,7 @@ export default function Result() {
 
             <img className="" src="/images/result/divider.svg" />
 
-            <button className="w-72 h-24 bg-gradient-to-b from-gray-300 to-gray-300 rounded-xl place-content-center">
-                결과가 마음에 드시나요?
-            </button>
+            <RetryBtn />
 
         </div>
     )

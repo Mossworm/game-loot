@@ -26,6 +26,9 @@ const config: Config = {
           },
           bg: {
             DEFAULT: '#F5F6F8',
+          },
+          button: {
+            DEFAULT: '#4882ED',
           }
         },
         dark: {
@@ -41,6 +44,9 @@ const config: Config = {
           },
           bg: {
             DEFAULT: '#1f1f1f',
+          },
+          button: {
+            DEFAULT: '#3182F7',
           }
         },
       }

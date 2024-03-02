@@ -12,8 +12,18 @@ import questions from '@/data/questions-a.json';
 export default function SurveyView() {
   const [qState, qDispatch] = useReducer(questionReducer, initialState);
   return (
+    <div className='flex flex-col gap-4'>
+      <div className='flex flex-row justify-between'>
 
-    <div className='flex h-screen items-center justify-center p-8'>
+        <button className="w-32 h-12 bg-light-primary dark:bg-dark-primary rounded-xl place-content-center dark:text-dark-text" onClick={() => { }}>
+          이전문제
+        </button>
+
+        <button className="w-32 h-12 bg-light-primary dark:bg-dark-primary rounded-xl place-content-center dark:text-dark-text" onClick={() => { }}>
+          다음문제
+        </button>
+
+      </div>
       <div className="flex flex-col gap-4 rounded-xl p-8 bg-light-primary dark:bg-dark-primary dark:text-dark-text">
 
         <p>{qState.currentQuestion + 1}번 문제</p>
@@ -25,10 +35,23 @@ export default function SurveyView() {
         <img className='rounded-xl' src="https://cdn.akamai.steamstatic.com/steam/apps/1337520/header.jpg?t=1706732251" />
 
         {qState.currentQuestion < questions.length - 1 ?
-          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='p-2 bg-light-primary-1 dark:bg-dark-primary-1 rounded-xl' onClick={() => qDispatch({ type: 'next' })}>{answer.answer}</button>)) :
-          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='p-2 bg-light-primary-1 dark:bg-dark-primary-1 rounded-xl' onClick={() => { window.location.href = '/' }}>{answer.answer}</button>))}
 
+          questions[qState.currentQuestion].answers.map((answer, index) => (<button key={index} className='p-2 bg-light-primary-1 dark:bg-dark-primary-1 rounded-xl' onClick={() => qDispatch({ type: 'next' })}>{answer.answer}</button>)) :
+
+          questions[qState.currentQuestion].answers.map((answer, index) => (
+            <button key={index} className='p-2 bg-light-primary-1 dark:bg-dark-primary-1 rounded-xl' onClick={() => { window.location.href = '/' }}>{answer.answer}</button>))}
       </div>
+
+      {qState.currentQuestion < questions.length - 1 ?
+        null
+        :
+        <div className='flex justify-end'>
+          <button className="w-32 h-12 bg-light-button dark:bg-dark-button rounded-xl place-content-center text-dark-text" onClick={() => window.location.href = "/result"}>
+            결과보기
+          </button>
+        </div>
+      }
+
     </div>
   )
 }
