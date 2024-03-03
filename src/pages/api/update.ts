@@ -1,18 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import clientPromise from "@/lib/mongodb";
 import { Collection, Db } from "mongodb";
+import { GameData } from "@/lib/interface";
 
 const coll_update_name = "SteamApps";
 const coll_service_name = "FinalApps";
 const coll_table_name = "PermutationTable";
-
-interface GameData {
-    index: number;
-    appid: number;
-    name: string;
-    positivity: number;
-    tags: Array<string>;
-}
 
 export default async (req : NextApiRequest, res : NextApiResponse) => {
     try {
