@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-light-bg dark:bg-dark-bg`}>
 
-        <div className='flex justify-end p-2'>
+        <div className='absolute right-0 p-3 sm:p-5 z-10'>
           <DarkModeBtn />
         </div>
         {children}

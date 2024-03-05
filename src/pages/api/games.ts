@@ -11,7 +11,7 @@ export default async (req:NextApiRequest, res:NextApiResponse) => {
         const client = await clientPromise;
         const db = client.db("GameLoot");
         const coll_service = db.collection(coll_service_name);
-        const coll_table = db.collection(coll_table_name)
+        const coll_table = db.collection(coll_table_name);
 
         const p_table : Array<number> = (await coll_table.findOne())?.table;
 
@@ -22,12 +22,21 @@ export default async (req:NextApiRequest, res:NextApiResponse) => {
             res.json(findOne);
         } else {
             //find all
-            const dataArray = new Array<any>;
-            for (let i = 0; i < 80; i++) {
-                const findOne = await coll_service.findOne({index:p_table[i]});
-                if (findOne) dataArray[i] = findOne;
+            const filterArray = Array.from({length:80},(_,i)=>({index:p_table[i]}));
+            const unsortedArray = await coll_service.find({$or:filterArray}).toArray();
+            const returnObject = {
+                unsorted: unsortedArray,
+                table: p_table,
             }
-            res.json(dataArray);
+            res.json(returnObject);
+
+            // find all : prototype(504 timeout on deploy.)
+            // const sortedArray = new Array<any>;
+            // for (let i = 0; i < 80; i++) {
+            //     const findOne = await coll_service.findOne({index:p_table[i]});
+            //     if (findOne) sortedArray[i] = findOne;
+            // }
+            // res.json(sortedArray);
         }
         
     } catch (e) {
