@@ -18,6 +18,6 @@ export default function DarkModeBtn() {
     }
 
     return (
-        <button className="block size-16" onClick={darkButtonFunc}><img src={isDark ? '/images/moon.svg' : '/images/sun.svg'} /></button>
+        <button className="block size-8 sm:size-16" onClick={darkButtonFunc}><img src={isDark ? '/images/moon.svg' : '/images/sun.svg'} /></button>
     )
 }
