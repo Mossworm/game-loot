@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     fontFamily: {
       'Toss': ['Toss Product Sans'],
-      'Pret': ['Pretendard']
+      'Pret': ['Pretendard'],
+      'Outfit': ['Outfit']
     },
     extend: {
       colors: {
@@ -21,17 +22,55 @@ const config: Config = {
             3: '#495057',
           },
           primary: {
-            DEFAULT: '#FFFFFF',
-            1: '#f4f4f4',
+            DEFAULT: '#F3F3F3',
+            1: '#FFFFFF',
           },
           bg: {
-            DEFAULT: '#F5F6F8',
+            DEFAULT: '#D9D9D9',
+          },
+          button: {
+            DEFAULT: '#4882ED',
+            low: '#888888',
+          }
+        },
+        light_before: {
+          text: {
+            DEFAULT: '#212529',
+            1: '#CED4DA',
+            2: '#868E96',
+            3: '#495057',
+          },
+          primary: {
+            DEFAULT: '#FFFFFF',
+            1: '#F3F3F3',
+          },
+          bg: {
+            DEFAULT: '#D9D9D9',
           },
           button: {
             DEFAULT: '#4882ED',
           }
         },
         dark: {
+          text: {
+            DEFAULT: '#ECECEC',
+            1: '#D9D9D9',
+            2: '#ACACAC',
+            3: '#595959',
+          },
+          primary: {
+            DEFAULT: '#20202C',
+            1: '#333238',
+          },
+          bg: {
+            DEFAULT: '#18181A',
+          },
+          button: {
+            DEFAULT: '#5F85DB',
+            low: '#FFFFFF',
+          }
+        },
+        dark_before: {
           text: {
             DEFAULT: '#ECECEC',
             1: '#D9D9D9',
