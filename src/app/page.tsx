@@ -1,25 +1,24 @@
 "use client";
 
-import Link from 'next/link'
 import BottomBtn from '@/components/BottomBtn';
 
 export default function Home() {
   return (
     <main className="main font-Pret text-black dark:text-neutral-200">
-      <div className="w-full h-screen relative overflow-hidden">
-        {/* <div className="w-full h-full absolute bg-neutral-200 dark:bg-neutral-900" /> */}
+      <div className="w-full h-screen min-h-[500px] relative overflow-hidden">
         <div className="w-full h-full max-h-[1200px] absolute flex flex-col gap-7 items-center justify-around py-52">
+          {/* 개발자 정보 */}
+          <p className="fixed top-4 mx-auto text-sm transition-all opacity-30 hover:opacity-80 hover:text-lg">
+            <b>3443 & mossworm</b> © 2024.
+          </p>
+
           {/* 타이틀 */}
           <div className="flex flex-col gap-3">
             <div className="">
-              <span className="text-5xl sm:text-9xl font-semibold">Game Loot</span>
+              <span className="text-5xl sm:text-9xl font-medium font-Outfit">Game Loot</span>
             </div>
             <div className="text-center text-xl sm:text-4xl font-bold">나의 선호 게임 유형 분석과 추천</div>
           </div>
-
-          {
-            //#region 아이콘과 설명들
-          }
 
           {/* 아이콘 영역 */}
           <div className="w-full max-w-3xl flex flex-row justify-around">
@@ -47,20 +46,11 @@ export default function Home() {
             </div>
           </div>
 
-          {
-            //#endregion
-          }
           <div className='max-sm:absolute bottom-0 p-8 flex justify-center w-full px-4'>
             <BottomBtn label='시작' onClick={() => window.location.href = '/survey'} />
           </div>
 
         </div>
-      </div>
-      {/* 푸터 */}
-      <div className="bg-slate-600 h-[20vh] flex items-center justify-center">
-        <p className="m-auto text-white">
-          © 2024.<br />3443 & mossworm<br />All Rights Reserved.
-        </p>
       </div>
     </main>
   )

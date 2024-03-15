@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import clientPromise from "@/lib/mongodb";
-import { Collection, Db } from "mongodb";
+import { Db } from "mongodb";
 import { GameData } from "@/lib/interface";
 
 const coll_update_name = "SteamApps";
@@ -25,9 +25,8 @@ export default async (req : NextApiRequest, res : NextApiResponse) => {
                     const coll_update = db.collection(coll_update_name);
                     const id_arr = (await coll_update.find().toArray()).map(doc=>doc['appid']);
                     for (let appid of id_arr) {
-                        const {success} = await append_tag_with_appid(coll_update,appid);
+                        const {success} = await append_tag_with_appid(db,appid);
                         if (!success) {
-                            console.error('Error while [2] tag collection.');
                             throw new Error('Error while [2] tag collection.');
                         }
                     }
@@ -100,11 +99,28 @@ async function reload_from_api(db : Db) {   //update collection을 드랍하고,
         });
         return Object.values(data);//키를 버리고 배열화하여 반환
     });
-    db.collection(coll_update_name).insertMany(fullAppsData);
+    await db.collection(coll_update_name).insertMany(fullAppsData);
 }
 
-async function append_tag_with_appid(update : Collection, appid : number) : Promise<{success:boolean}> {   //지정한 appid만 업데이트
+async function append_tag_with_appid(db : Db, appid : number) : Promise<{success:boolean}> {   //지정한 appid만 업데이트
     try{
+        const update = db.collection(coll_update_name);
+        const service = db.collection(coll_service_name);
+
+        const repetition = await service.findOne({appid:appid})
+        if (repetition) {
+            await update.findOneAndUpdate({
+                "appid" : appid
+            },
+            {
+                $set: {
+                    "tags" : repetition.tags
+                }
+            });
+            console.log(`appid:${appid} > tag appended successfully. (from service cache)`);
+            return {success:true};
+        }
+
         const tags : Array<string> = await fetch(`http://steamspy.com/api.php?request=appdetails&appid=${appid}`)
         .then(response => response.json())
         .then(data => {

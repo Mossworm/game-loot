@@ -1,0 +1,233 @@
+[
+    {
+        "index": 0,
+        "question": "게임 속의 세계, 나는 주로...",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "현란한 기술, 빠른 판단으로 적을 섬멸한다.",
+                "score": ["FPS","Online Co-Op"]
+            },
+            {
+                "answer": "검과 방패, 마법과 물약 등을 챙겨 모험을 떠난다.",
+                "score": ["Adventure","RPG"]
+            },
+            {
+                "answer": "지력과 언변, 상황에 맞는 도구로 상황을 타개한다.",
+                "score": ["Strategy","Puzzle"]
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "question": "최고의 게임에 필수적인 요소는...",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "서사적 몰입감과 압도적인 비주얼, 웅장한 사운드이다.",
+                "score": ["Singleplayer","Great Soundtrack","Story Rich","Atmospheric"]
+            },
+            {
+                "answer": "저렴한 가격에 긴 시간을 몰입하게 하는 가성비이다.",
+                "score": ["Indie","Free to Play","Simulation","Casual"]
+            },
+            {
+                "answer": "버그 없이 쾌적한 완성도와 최적화이다.",
+                "score": ["Classic"]
+            },
+            {
+                "answer": "뭐가 됐든 즐거우면 그만이다.",
+                "score": ["4 Player Local","Comedy","Horror","Family Friendly"]
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "question": "게임 전용 방을 만든다면...",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "키보드와 마우스, 헤드셋 등을 둘 것이다.",
+                "score": ["Third Person","Third-Person Shooter","Online Co-Op","Co-op Campaign","Team-Based"]
+            },
+            {
+                "answer": "게임패드, 큰 디스플레이, 편안한 소파 등을 원한다.",
+                "score": ["Controller","Cinematic","Action","Local Multiplayer","Casual"]
+            },
+            {
+                "answer": "VR 기기는 절대 빼놓을 수 없다.",
+                "score": ["VR Only","VR","Character Customization","360 Video","3D Vision"]
+            },
+            {
+                "answer": "노트북과 마우스만 있어도 충분하다.",
+                "score": ["Text-Based","Turn-Based","Visual Novel","2D","Point & Click","Strategy","Touch-Friendly"]
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "question": "수상한 너구리가 당신의 책상에 타임머신을 설치했다.",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "후회하던 과거 속의 나에게 조언을 해주기 위해 출발한다.",
+                "score": ["Multiple Endings","Choices Matter","Turn-Based","Time Manipulation","Time Travel"]
+            },
+            {
+                "answer": "기계의 동작 원리를 파헤치기 위해, 여러 실험을 반복해본다.",
+                "score": ["Logic","Simulation","Sci-fi","Programming"]
+            },
+            {
+                "answer": "근대로 돌아가서 현대 문물을 전파하여 역사를 뒤바꾼다.",
+                "score": ["Alternate History","Historical","Tactical","City Builder"]
+            },
+            {
+                "answer": "고생대에서 동식물을 서리하여 비법 재료로 식당을 개업한다.",
+                "score": ["Crime","Dinosaurs","Simulation","Dark Humor","Capitalism","Management"]
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "question": "친구와 영화관에 왔건만, 웬일인지 특출난 흥행작이 없는 듯 하다.",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "언제 와도 하나는 꼭 있는 히어로 액션 영화를 고른다.",
+                "score": ["Action","Action RPG","Batman","Parkour","Pirates"]
+            },
+            {
+                "answer": "나는 사실 2D 세상 주민이다. 아이들과 사이좋게 만화영화를 본다.",
+                "score": ["Anime","Cartoon","Cute","2D","Family Friendly","Female Protagonist"]
+            },
+            {
+                "answer": "친구를 설득해서, 보고 싶은 호러나 로맨스 영화를 볼 것이다.",
+                "score": ["Horror","Survival Horror","Romance"]
+            },
+            {
+                "answer": "이럴 때는 역시 B급 영화를 봐서 제작사 입에 풀칠을 해주자.",
+                "score": ["Walking Simulator","Cult Classic","Abstract","Dark Comedy","Bullet Hell"]
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "question": "인생이란 무엇인가요?",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "성실하고 요령 있게 부와 명성을 축적하는 것입니다.",
+                "score": ["Strategy","rpg","Tactical RPG","Hack and Slash"]
+            },
+            {
+                "answer": "가치 있는 실패에서 비롯되는 새로운 기회를 놓치지 않는 것입니다.",
+                "score": ["Rogue-like","Rogue-lite","Perma Death","Choose Your Own Adventure"]
+            },
+            {
+                "answer": "끝 없는 경쟁과 협력으로 자신의 사회적 가치를 증명하는 것입니다.",
+                "score": ["Real Time Tactics","Fighting","Team-Based"]
+            },
+            {
+                "answer": "인생은 네컷입니다.",
+                "score": ["4X","Replay Value","1980s","1990's"]
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "question": "해변에서 보석처럼 생긴 특이한 돌멩이를 발견했지만, 마침 주머니가 없을 때 당신은...",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "이 보물은 자택의 진열장에 전시될 것이므로 짐꾸러미로 직행한다.",
+                "score": ["RPG","Resource Management","Inventory Management","Hunting"]
+            },
+            {
+                "answer": "신비로운 자연의 선물을 힘껏 바다에 돌려주었다.",
+                "score": ["FPS","Grand Strategy","Choices Matter"]
+            },
+            {
+                "answer": "주변에 괜찮은 녀석은 더 없는지, 탐사 속행이다.",
+                "score": ["Open World","rpg","Strategy RPG","Loot"]
+            },
+            {
+                "answer": "이리저리 가지고 놀다가 질려, 아이들의 모래성 위에 돌탑을 쌓으려다 무너트리고는 도망친다.",
+                "score": ["Sandbox","Point & Click","Villain Protagonist","Nonlinear"]
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "question": "오랜만에 방문한 오락실, 어떤 게임을 먼저 해볼까?",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "현실감 넘치는 레이싱 게임",
+                "score": ["Racing","Simulation","Multiplayer","Driving","Realistic"]
+            },
+            {
+                "answer": "백발백중 명사수를 위한 사격장 게임",
+                "score": ["FPS","Shooter","Action","Multiplayer","Shooter","Arena Shooter"]
+            },
+            {
+                "answer": "신나는 최신음악으로 유혹하는 리듬 게임",
+                "score": ["Music","Rhythm","Arcade","Music-Based Procedural Generation"]
+            },
+            {
+                "answer": "한창 때 이름 좀 날렸던 추억의 레트로 게임",
+                "score": ["Pixel Graphics","Singleplayer","Arcade","Bullet Hell","Retro","Arcade","Side Scroller"]
+            },
+            {
+                "answer": "천국행 스트레이트를 보여주마 펀칭 머신",
+                "score": ["Fighting","2D Fighter","Score Attack"]
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "question": "핵 폭발까지 남은 시간은 고작 60초..! 방공호에 단 하나의 물건이 허용된다면 무엇을 챙길까?",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "트럼프 카드",
+                "score": ["Card Game","Turn-Based","Trading Card Game"]
+            },
+            {
+                "answer": "구급용품이 포함된 서바이벌 키트",
+                "score": ["Survival","RPG","Stealth","Agriculture"]
+            },
+            {
+                "answer": "숫자퍼즐 모음집",
+                "score": ["Puzzle","Difficult","Sokoban","Programming"]
+            },
+            {
+                "answer": "베스트셀러 소설",
+                "score": ["Story Rich","Based On A Novel","Walking Simulator"]
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "question": "게임에 최고로 몰입할 때는 역시!",
+        "meta": "",
+        "answers": [
+            {
+                "answer": "조용한 공간에서 자신의 한계를 시험하는 순간",
+                "score": ["Singleplayer","Singleplayer","Singleplayer","Time Attack","Relaxing","Score Attack"]
+            },
+            {
+                "answer": "친구, 가족들과의 유대와 추억을 아로새기는 순간",
+                "score": ["Multiplayer","Family Friendly","Local Multiplayer","Local Co-Op","Team-Based","Asynchronous Multiplayer","Party-Based RPG"]
+            }
+        ]
+    },
+    {
+        "index": -1,
+        "answers": [
+            {
+                "answer":"",
+                "score":["Indie", "Action", "Adventure", "Singleplayer", "Casual", "Strategy", "Simulation", "RPG", "Multiplayer", "Great Soundtrack", "Atmospheric", "2D", "Puzzle", "Early Access", "Open World", "Story Rich", "Co-op", "Difficult", "Shooter", "Sci-fi", "First-Person", "Horror", "VR", "Anime", "Pixel Graphics", "Funny", "Fantasy", "Platformer", "Female Protagonist", "Free to Play", "FPS", "Survival", "Gore", "Violent", "Sandbox", "Retro", "Comedy", "Arcade", "Classic", "Nudity", "Third Person", "Massively Multiplayer", "Exploration", "Visual Novel", "Point & Click", "Turn-Based", "Space", "Sports", "Rogue-like", "Cute", "Tactical", "Racing", "Psychological Horror", "Online Co-Op", "Zombies", "Family Friendly", "Sexual Content", "Local Co-Op", "Local Multiplayer", "Controller", "Replay Value", "Memes", "Building", "RTS", "Turn-Based Strategy", "Side Scroller", "Fast-Paced", "Crafting", "Action RPG", "Mystery", "Dark", "Shoot 'Em Up", "Management", "Survival Horror", "Hack and Slash", "War", "Historical", "Physics", "Stealth", "Rogue-lite", "PvP", "Realistic", "Short", "Isometric", "Moddable", "RPGMaker", "Third-Person Shooter", "Relaxing", "Bullet Hell", "Walking Simulator", "Top-Down", "Dungeon Crawler", "JRPG", "Fighting", "Colorful", "Mature", "Puzzle-Platformer", "Competitive", "Procedural Generation", "Medieval", "Post-apocalyptic", "Character Customization", "Tower Defense", "Military", "Choices Matter", "4 Player Local", "MMORPG", "Turn-Based Combat", "Base-Building", "Beat 'em up", "Cyberpunk", "Hidden Object", "VR Only", "Metroidvania", "Futuristic", "World War II", "Dark Fantasy", "Minimalist", "Team-Based", "Perma Death", "Robots", "Dating Sim", "Action-Adventure", "Card Game", "Economy", "Top-Down Shooter", "Detective", "Turn-Based Tactics", "Education", "Magic", "Aliens", "Surreal", "Twin Stick Shooter", "Driving", "Romance", "City Builder", "Multiple Endings", "Parkour", "Music", "Steampunk", "Dark Humor", "Kickstarter", "Level Editor", "Illuminati", "Resource Management", "Flight", "Board Game", "Grand Strategy", "Choose Your Own Adventure", "1990's", "Destruction", "Utilities", "Remake", "4X", "3D Platformer", "Real-Time with Pause", "Dystopian", "2.5D", "2D Fighter", "Loot", "Real-Time", "Cartoony", "Match 3", "Arena Shooter", "Hand-drawn", "Text-Based", "Stylized", "CRPG", "Mechs", "Lovecraftian", "Crime", "Abstract", "Design & Illustration", "Cult Classic", "Touch-Friendly", "Episodic", "Blood", "Experimental", "Real Time Tactics", "Tactical RPG", "Voxel", "Pirates", "Psychological", "3D Vision", "Clicker", "MOBA", "Tanks", "Interactive Fiction", "e-sports", "Space Sim", "Split Screen", "Naval", "Hex Grid", "1980s", "Animation & Modeling", "Cartoon", "Noir", "Ninja", "Wargame", "Linear", "Demons", "Drama", "Narration", "Strategy RPG", "Comic Book", "Superhero", "Rhythm", "PvE", "Alternate History", "Score Attack", "Western", "Time Travel", "God Game", "Assassin", "Dinosaurs", "Political", "GameMaker", "Dragons", "Mouse only", "Trading Card Game", "Party-Based RPG", "Psychedelic", "Cold War", "Hacking", "Video Production", "Cinematic", "Gothic", "Trains", "Swordplay", "Otome", "Parody", "Games Workshop", "Crowdfunded", "Politics", "Audio Production", "Hunting", "Character Action Game", "Science", "Underwater", "Trading", "Football", "Lore-Rich", "Satire", "FMV", "Agriculture", "Game Development", "Vampire", "Quick-Time Events", "Bullet Time", "Mythology", "Supernatural", "Warhammer 40K", "Heist", "Runner", "Class-Based", "Mod", "Dark Comedy", "World War I", "Programming", "Spectacle fighter", "Software", "Grid-Based Movement", "America", "Silent Protagonist", "Time Attack", "Thriller", "Villain Protagonist", "Software Training", "Fishing", "Soundtrack", "Soccer", "TrackIR", "Capitalism", "Time Manipulation", "Rome", "Pinball", "Experience", "Star Wars", "Nonlinear", "Co-op Campaign", "Mars", "Inventory Management", "Diplomacy", "Based On A Novel", "NSFW", "6DOF", "Typing", "Philisophical", "Chess", "Web Publishing", "Mining", "Sailing", "Gun Customization", "Sniper", "Asynchronous Multiplayer", "Modern", "Offroad", "Lara Croft", "Batman", "Horses", "Mini Golf", "Logic", "Music-Based Procedural Generation", "LEGO", "Martial Arts", "Conspiracy", "Golf", "On-Rails Shooter", "Artificial Intelligence", "Benchmark", "Sokoban", "Dynamic Narration", "Werewolves", "Transhumanism", "Mystery Dungeon", "Photo Editing", "Word Game", "Bowling", "Wrestling", "Lemmings", "Basketball", "Gambling", "Voice Control", "Gaming", "Faith", "Conversation", "Movie", "Documentary", "Pool", "Bikes", "Steam Machine", "Investigation", "Tutorial", "360 Video", "Cycling", "Intentionally Awkward Controls", "Underground", "Hardware", "Spelling"]
+            }
+        ]
+    }
+]

@@ -11,7 +11,6 @@ const SURVEY_QUESTIONS_COUNT = 30;
 export default function useSurvey() {
     const { push } = useRouter();
     //state 위치
-    const [loading, setloading] = useState(false);
     const [state, dispatch] = useReducer(surveyReducer,initialState);
 
     const {currentQuestion, leading, selected} = state;

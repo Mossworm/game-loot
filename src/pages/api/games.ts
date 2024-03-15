@@ -29,14 +29,6 @@ export default async (req:NextApiRequest, res:NextApiResponse) => {
                 table: p_table,
             }
             res.json(returnObject);
-
-            // find all : prototype(504 timeout on deploy.)
-            // const sortedArray = new Array<any>;
-            // for (let i = 0; i < 80; i++) {
-            //     const findOne = await coll_service.findOne({index:p_table[i]});
-            //     if (findOne) sortedArray[i] = findOne;
-            // }
-            // res.json(sortedArray);
         }
         
     } catch (e) {
