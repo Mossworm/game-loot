@@ -1,0 +1,222 @@
+GET http://localhost:3000/api/update?task=1
+###
+GET http://localhost:3000/api/games
+###
+POST http://localhost:3000/api/result
+Content-Type: application/javascript
+
+[
+  {
+    "name": "Multiplayer",
+    "acc": 16
+  },
+  {
+    "name": "Open World",
+    "acc": 9
+  },
+  {
+    "name": "Survival",
+    "acc": 8
+  },
+  {
+    "name": "FPS",
+    "acc": 7
+  },
+  {
+    "name": "Shooter",
+    "acc": 6
+  },
+  {
+    "name": "RPG",
+    "acc": 5
+  },
+  {
+    "name": "Open World Survival Craft",
+    "acc": 5
+  },
+  {
+    "name": "Online Co-Op",
+    "acc": 4
+  },
+  {
+    "name": "Singleplayer",
+    "acc": 4
+  },
+  {
+    "name": "Free to Play",
+    "acc": 4
+  },
+  {
+    "name": "Action",
+    "acc": 4
+  },
+  {
+    "name": "Crafting",
+    "acc": 3
+  },
+  {
+    "name": "War",
+    "acc": 3
+  },
+  {
+    "name": "Zombies",
+    "acc": 3
+  },
+  {
+    "name": "Co-op",
+    "acc": 3
+  },
+  {
+    "name": "Great Soundtrack",
+    "acc": 2
+  },
+  {
+    "name": "Story Rich",
+    "acc": 2
+  },
+  {
+    "name": "Atmospheric",
+    "acc": 2
+  },
+  {
+    "name": "Simulation",
+    "acc": 2
+  },
+  {
+    "name": "Building",
+    "acc": 2
+  },
+  {
+    "name": "MMORPG",
+    "acc": 2
+  },
+  {
+    "name": "Action RPG",
+    "acc": 2
+  },
+  {
+    "name": "Sandbox",
+    "acc": 2
+  },
+  {
+    "name": "Adventure",
+    "acc": 2
+  },
+  {
+    "name": "PvP",
+    "acc": 2
+  },
+  {
+    "name": "Racing",
+    "acc": 1
+  },
+  {
+    "name": "Card Game",
+    "acc": 1
+  },
+  {
+    "name": "Hack and Slash",
+    "acc": 1
+  },
+  {
+    "name": "Medieval",
+    "acc": 1
+  },
+  {
+    "name": "Strategy",
+    "acc": 1
+  },
+  {
+    "name": "Classic",
+    "acc": 1
+  },
+  {
+    "name": "Team-Based",
+    "acc": 1
+  },
+  {
+    "name": "Creature Collector",
+    "acc": 1
+  },
+  {
+    "name": "Souls-like",
+    "acc": 1
+  },
+  {
+    "name": "Dark Fantasy",
+    "acc": 1
+  },
+  {
+    "name": "Difficult",
+    "acc": 1
+  },
+  {
+    "name": "Tactical RPG",
+    "acc": 1
+  },
+  {
+    "name": "Management",
+    "acc": 1
+  },
+  {
+    "name": "Mythology",
+    "acc": 1
+  },
+  {
+    "name": "Battle Royale",
+    "acc": 1
+  },
+  {
+    "name": "World War II",
+    "acc": 1
+  },
+  {
+    "name": "Choices Matter",
+    "acc": 1
+  },
+  {
+    "name": "e-sports",
+    "acc": 1
+  },
+  {
+    "name": "Tactical",
+    "acc": 1
+  },
+  {
+    "name": "Fighting",
+    "acc": 1
+  },
+  {
+    "name": "2D Fighter",
+    "acc": 1
+  },
+  {
+    "name": "Casual",
+    "acc": 1
+  },
+  {
+    "name": "2D Platformer",
+    "acc": 1
+  },
+  {
+    "name": "Massively Multiplayer",
+    "acc": 1
+  },
+  {
+    "name": "Military",
+    "acc": 1
+  },
+  {
+    "name": "Early Access",
+    "acc": 1
+  },
+  {
+    "name": "Horror",
+    "acc": 1
+  },
+  {
+    "name": "Survival Horror",
+    "acc": 1
+  }
+]
+###
